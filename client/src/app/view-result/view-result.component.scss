@@ -1,0 +1,28 @@
+.results-container {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    flex: 1;
+    height: 450px; /* Utrzymuje tę samą wysokość co pierwszy prostokąt */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Wyśrodkowanie zawartości */
+    align-items: center; /* Wyśrodkowanie zawartości w pionie */
+    margin-left: 20px; /* Odstęp między prostokątami */
+    box-shadow: none; /* Usuwa cień */
+  }
+
+  .results-container button {
+    background-color: #4caf50; /* Kolor tła */
+    color: white; /* Kolor tekstu */
+    border: none; /* Bez obramowania */
+    padding: 15px 30px; /* Wypełnienie */
+    border-radius: 5px; /* Zaokrąglenie narożników */
+    cursor: pointer; /* Kursor w formie wskazówki */
+    font-size: 18px; /* Rozmiar czcionki */
+    margin-top: 20px; /* Odstęp powyżej przycisku */
+  }
+
+  .results-container button:disabled {
+    background-color: #ccc; /* Kolor tła dla wyłączonego przycisku */
+  }

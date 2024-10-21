@@ -1,0 +1,14 @@
+
+<div class="container">
+    <div class="upload-container">
+      <label for="file-input">Upload PDF File</label> 
+      <img src="assets/uploadicon.png" alt="ikonka2" class="upload-icon" />
+      <input id="file-input" type="file" accept=".pdf" (change)="onFileSelected($event)" class="file-input" title="Wybierz plik PDF do załadowania" />
+      <button (click)="uploadFile()" [disabled]="!selectedFile">Upload</button>
+    </div>
+      <app-app-generate-button
+      [highDesText]="combinedhighDesText"
+        [lowDesText]="combinedLowDesText">
+    </app-app-generate-button>
+    <app-view-result></app-view-result>
+    </div>

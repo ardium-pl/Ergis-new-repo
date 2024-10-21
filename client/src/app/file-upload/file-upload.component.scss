@@ -1,0 +1,77 @@
+:host {
+    display: flex;
+    justify-content: center; /* Centruje wszystkie prostokąty w poziomie */
+    align-items: flex-start; /* Ustawia je w górnej części */
+    margin-top: 20px; /* Dodaje odstęp od góry */
+    position: fixed; /* Umożliwia ustawienie na dole */
+    bottom: 20px; /* Ustawia odległość od dołu */
+    left: 50%; /* Ustawia kontener na środku w poziomie */
+    transform: translateX(-50%); /* Przesuwa kontener o połowę jego szerokości w lewo */
+    width: 100%; /* Ustawia szerokość hosta na 100% */
+  }
+
+  .container {
+    display: flex; /* Umożliwia prostokatom bycie obok siebie */
+    width: calc(100% - 60px); /* Ustawia szerokość kontenera na 100% z uwzględnieniem przerw */
+  }
+
+  .upload-container,
+  app-generate-button,
+  app-view-results {
+    background-color: white;
+    border: 2px dashed #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    height: 450px; /* Wysokość prostokątów */
+    width: calc(33.33% - 20px); /* Ustawia szerokość prostokątów na 1/3 minus marginesy */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px; /* Ustawia margines na lewo i prawo */
+  }
+
+  .upload-icon {
+    max-height: 50%;
+    width: auto;
+    margin-bottom: 10px;
+  }
+
+  .file-input {
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #333A46;
+    border-radius: 7px;
+    background-color: #f0f0f0;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .file-input::-webkit-file-upload-button {
+    background-color: #333A46;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .upload-container button {
+    background-color: #333A46;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+
+  .upload-container button:disabled {
+    background-color: #ccc;
+  }

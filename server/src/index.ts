@@ -15,9 +15,10 @@ const app = express();
 
 // Middleware
 app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
-app.use(cookieParser());
-app.use(cors({ credentials: true, origin: process.env.APP_URL }));
+app.use(cors());
+// app.use(express.urlencoded({ extended: false }));
+// app.use(cookieParser());
+// app.use(cors({ credentials: true, origin: process.env.APP_URL }));
 
 // Routers
 app.use('/api/auth', authRouter);
@@ -29,7 +30,7 @@ app.listen(PORT, () => {
   console.log(`${OK_STR}Running on port ${ansis.greenBright.underline(String(PORT))}!`);
 
   try {
-    connectToDb();
+    // connectToDb();
     console.log(`${OK_STR}Connected to database!`);
   } catch (err) {
     throw err;

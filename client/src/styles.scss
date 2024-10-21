@@ -55,3 +55,41 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+/* Set the entire page background to light brown */
+body {
+  background-color: #d6cebe; /* Light brown */
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+img {
+  display: block;
+  margin: 10px auto;
+  max-width: 100px;
+}
+
+/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.line-through {
+    text-decoration: line-through; // Przekreślenie tekstu
+  }
+
+  .top-bar {
+    background-color: #333A46; /* Garnet */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    position: fixed;
+    width: 100%;
+    top: 0;
+  }
+
+  .content {
+    padding-top: 80px;
+    text-align: center;
+  }
