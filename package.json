@@ -1,0 +1,13 @@
+{
+  "name": "app",
+  "scripts": {
+    "prettier": "npx prettier --write .",
+    "preinstall": "npx only-allow pnpm",
+    "install-all": "pnpm i && cd server && pnpm i && cd ../client && pnpm i && cd ../"
+  },
+  "devDependencies": {
+    "only-allow": "^1.2.1",
+    "pnpm": "^9.12.1",
+    "prettier": "^3.3.3"
+  }
+}
